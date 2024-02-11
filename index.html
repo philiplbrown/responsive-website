@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        body{
+            max-width: 900px;
+            border: 5px solid sienna;
+            margin: 0 auto;
+        }
+        h1{
+            font-size: 5vw;
+        }
+        .tiger img{
+            width: 100%;
+        }
+        /* 2 column responsive styles */
+        .first-container{
+            display: flex;
+            gap: 5px;
+        }
+        .two-column img{
+            width: 100%;
+        }
+        /* Multi-column-responsive-styles */
+        .second-container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5px;
+        }
+        .multi-column img{
+            width: 100%;
+        }
+        /* Media quaery */
+        @media screen and (max-width: 576px){
+            .first-container{
+                flex-direction: column;
+            }
+            .second-container{
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+        @media screen and (min-width: 577px) and (max-width: 800px){
+            .second-container{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>My first responsive website</h1>
+    </section>
+    <section>
+            <div class="tiger">
+                <h2>This is first picture</h2>
+                <img src="images/3.-Siberian-Tiger-credit-to-Pixabay-scaled.jpg" alt="">
+            </div>
+    </section>
+    <!-- 2 column responsive -->
+    <section>
+        <div class="first-container">
+            <div class="two-column">
+                <h3>This is second picture</h3>
+                <img src="images/IMG_0512.JPG" alt="">
+            </div>
+            <div class="two-column">
+                <h3>This is third picture</h3>
+                <img src="images/IMG_0923.JPG" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- Multi-column-responsive -->
+    <section>
+        <div class="second-container">
+            <div class="multi-column">
+                <img src="images/food.jpg" alt="">
+                <h4>Organig food</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <button>order</button>
+            </div>
+            <div class="multi-column">
+                <img src="images/food.jpg" alt="">
+                <h4>Organig food</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <button>order</button>
+            </div>
+            <div class="multi-column">
+                <img src="images/food.jpg" alt="">
+                <h4>Organig food</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <button>order</button>
+            </div>
+            <div class="multi-column">
+                <img src="images/food.jpg" alt="">
+                <h4>Organig food</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <button>order</button>
+            </div>
+            <div class="multi-column">
+                <img src="images/food.jpg" alt="">
+                <h4>Organig food</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <button>order</button>
+            </div>
+            <div class="multi-column">
+                <img src="images/food.jpg" alt="">
+                <h4>Organig food</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <button>order</button>
+            </div>
+            <div class="multi-column">
+                <img src="images/food.jpg" alt="">
+                <h4>Organig food</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <button>order</button>
+            </div>
+            <div class="multi-column">
+                <img src="images/food.jpg" alt="">
+                <h4>Organig food</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <button>order</button>
+            </div>
+            <div class="multi-column">
+                <img src="images/food.jpg" alt="">
+                <h4>Organig food</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <button>order</button>
+            </div>
+            <div class="multi-column">
+                <img src="images/food.jpg" alt="">
+                <h4>Organig food</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <button>order</button>
+            </div>
+            <div class="multi-column">
+                <img src="images/food.jpg" alt="">
+                <h4>Organig food</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <button>order</button>
+            </div>
+            <div class="multi-column">
+                <img src="images/food.jpg" alt="">
+                <h4>Organig food</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <button>order</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
